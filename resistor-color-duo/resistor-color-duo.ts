@@ -22,9 +22,8 @@ export class ResistorColor {
 
   value(): number {
     let colorsInNumbers = "";
-    for (let i = 0; i < 2; i++) {
-      colorsInNumbers += this.colorCodes.get(this.colors[i]);
-    }
+    colorsInNumbers += this.colorCodes.get(this.colors[0]);
+    colorsInNumbers += this.colorCodes.get(this.colors[1]);
     return Number.parseInt(colorsInNumbers);
   }
 }
